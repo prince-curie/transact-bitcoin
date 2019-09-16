@@ -16,6 +16,7 @@ A graphQL api with a single query that returns the price of bitcoin depending on
 
 - create a .env file
 - copy the contents of .env.example into your .env file
+- add this key and value to the .env file `COIN_DESK_API=https://api.coindesk.com/v1/bpi/currentprice/USD.json`
 - run `adonis key:generate` to generate the app key
 - run `adonis serve --dev` to start the server
 - open your web browser and go to the address `http://127.0.0.1:3333/graphiql`
