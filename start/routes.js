@@ -19,6 +19,8 @@ const { graphqlAdonis, graphiqlAdonis } = require('apollo-server-adonis');
 const Route = use('Route')
 const schema = require('../app/schema/calculatePriceSchema')
 
+Route.get('/', ({ response }) => response.send('Welcome to transact-bitcoin, kindly navigate to /graphiql'))
+
 Route.route('/graphql',
   graphqlAdonis({
     schema,
